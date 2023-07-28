@@ -11,7 +11,7 @@ Algunos conceptos trabajados en este proyecto:
 * uso de interpolacion angular
 * decorador con elementos
 * definicion de clase
-* Two way binding
+* Two way binding y referencias locales
 
 
 
