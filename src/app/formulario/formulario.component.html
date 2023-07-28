@@ -1,0 +1,16 @@
+<form class="item"> <!-- creacion de formulario horizontal-->
+   <!-- <div class="form-group col-md-2">   primer elemento -->
+    <!--  <label for="nombre" class="visually-hidden">Nombre:</label>-->
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" 
+      [(ngModel)]="nombreInput" > <!-- [(ngModel)]="nombreInput"  #nombreInput1-->
+    
+    
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" 
+      [(ngModel)]="apellidoInput"> <!-- [(ngModel)]="apellidoInput" #apellidoInput-->
+    
+    
+      <button type="submit" class="btn btn-primary" (click)="agregarPersona()"><!-- agregarPersona(nombreInput1,apellidoInput) para #REF -->
+        +
+      </button>
+    
+  </form>

@@ -1,0 +1,30 @@
+<div class="box" id="heading">
+  
+    <h1>
+      {{title}} <!-- titulo de la pagina -->
+    </h1>
+</div> 
+
+ <div class="box">
+<app-persona
+*ngFor="let personaElemento of personas; let i = index"
+[persona]="personaElemento"
+[indice]="i">
+
+</app-persona>
+</div> 
+<div class="box">
+<app-formulario ></app-formulario> <!-- (personaCreada)="personaAgregada($event)"-->
+</div>
+<!--
+<div class="container">  <!- clase container de bootstrap->
+  <hr/>
+  <div class="row">  <!- reglon ->
+<div class="col">  <!- columna ->
+<div *ngFor="let localvar1 of personas; let i = index">  <!- persona variable local ->
+{{i+1}}: {{localvar1.nombre}} {{localvar1.apellido}}   <!- interpolacion / i contador->
+</div>
+</div>
+  </div>
+ 
+</div> -->
